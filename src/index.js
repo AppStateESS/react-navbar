@@ -4,6 +4,7 @@ import Button from './Button'
 import Link from './Link'
 import Dropdown from './Dropdown'
 import DropdownLink from './DropdownLink'
+import Search from './Search'
 import PropTypes from 'prop-types'
 import './style.css'
 
@@ -122,3 +123,4 @@ export const NavbarButton = Button
 export const NavbarLink = Link
 export const NavbarDropdown = Dropdown
 export const NavbarDropdownLink = DropdownLink
+export const NavbarSearch = Search
