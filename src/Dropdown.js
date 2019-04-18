@@ -26,6 +26,4 @@ NavbarDropdown.propTypes = {
   listing: PropTypes.array.isRequired,
 }
 
-NavbarDropdown.defaultProps = {}
-
 export default NavbarDropdown
