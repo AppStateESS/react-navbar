@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Search = (props) => {
+const NavbarSearch = (props) => {
   let button
   if (props.onClick) {
     button = (
@@ -28,16 +28,16 @@ const Search = (props) => {
   )
 }
 
-Search.propTypes = {
+NavbarSearch.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   onClick: PropTypes.func
 }
 
-Search.defaultProps = {
+NavbarSearch.defaultProps = {
   placeholder: 'Search...',
   value: ''
 }
 
-export default Search
+export default NavbarSearch

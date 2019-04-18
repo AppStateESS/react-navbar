@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Button = (props) => {
+const NavbarButton = (props) => {
   const getClass = () => {
     let size
     switch (props.size) {
@@ -22,16 +22,16 @@ const Button = (props) => {
   )
 }
 
-Button.propTypes = {
+NavbarButton.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.object,]),
   handleClick: PropTypes.func,
   color: PropTypes.string,
   size: PropTypes.string
 }
 
-Button.defaultProps = {
+NavbarButton.defaultProps = {
   color: 'default',
   size: null
 }
 
-export default Button
+export default NavbarButton

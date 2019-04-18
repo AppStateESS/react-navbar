@@ -1,6 +1,6 @@
 {
   "name": "@essappstate/react-navbar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React navigation bar using Bootstrap",
   "main": "build/index.js",
   "scripts": {

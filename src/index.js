@@ -1,14 +1,14 @@
 'use strict'
 import React, {Component} from 'react'
-import Button from './Button'
-import Link from './Link'
-import Dropdown from './Dropdown'
-import DropdownLink from './DropdownLink'
-import Search from './Search'
+import NavbarButton from './NavbarButton'
+import NavbarDropdown from './NavbarDropdown'
+import NavbarLink from './NavbarLink'
+import NavbarDropdownLink from './NavbarDropdownLink'
+import NavbarSearch from './NavbarSearch'
 import PropTypes from 'prop-types'
 import './style.css'
 
-export class Navbar extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props)
     this.getLeft = this.getLeft.bind(this)
@@ -24,7 +24,7 @@ export class Navbar extends Component {
       return null
     }
     let content = this.props.leftSide.map((value, key) => {
-      if (value instanceof Dropdown) {
+      if (value instanceof NavbarDropdown) {
         return <li className="nav-item dropdown" key={key}>{value}</li>
       } else {
         return <li className="nav-item" key={key}>{value}</li>
@@ -119,8 +119,11 @@ Navbar.defaultProps = {
   background: 'light'
 }
 
-export const NavbarButton = Button
-export const NavbarLink = Link
-export const NavbarDropdown = Dropdown
-export const NavbarDropdownLink = DropdownLink
-export const NavbarSearch = Search
+export {
+  Navbar,
+  NavbarLink,
+  NavbarButton,
+  NavbarDropdown,
+  NavbarDropdownLink,
+  NavbarSearch
+}

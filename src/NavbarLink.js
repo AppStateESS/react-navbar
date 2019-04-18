@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Link = ({href, children, handle}) => {
+const NavbarLink = ({href, children, handle}) => {
   if (href && href.length > 0) {
     return (<a className="nav-link" href={href} onClick={handle}>{children}</a>)
   } else {
@@ -10,10 +10,10 @@ const Link = ({href, children, handle}) => {
   }
 }
 
-Link.propTypes = {
+NavbarLink.propTypes = {
   href: PropTypes.string,
   children: PropTypes.string.isRequired,
   handle: PropTypes.func
 }
 
-export default Link
+export default NavbarLink
