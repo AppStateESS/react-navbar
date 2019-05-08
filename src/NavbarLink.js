@@ -12,7 +12,7 @@ const NavbarLink = ({href, children, handle}) => {
 
 NavbarLink.propTypes = {
   href: PropTypes.string,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.object,]).isRequired,
   handle: PropTypes.func
 }
 
