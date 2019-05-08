@@ -16,14 +16,14 @@ const NavbarSearch = (props) => {
   }
   return (
     <div>
-      <form className="form-inline">
+      <div className="form-inline">
         <input
           className="form-control"
           type="search"
           placeholder={props.placeholder}
           value={props.value}
           onChange={props.onChange}/> {button}
-      </form>
+      </div>
     </div>
   )
 }
