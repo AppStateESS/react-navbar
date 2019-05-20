@@ -61,7 +61,7 @@ class Navbar extends Component {
         return 'navbar-expand-' + this.props.expand
 
       default:
-        return 'navbar-expand'
+        return 'navbar-expand-md'
     }
   }
 
