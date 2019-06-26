@@ -1,6 +1,6 @@
 {
   "name": "@essappstate/react-navbar",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "React navigation bar using Bootstrap",
   "main": "build/index.js",
   "scripts": {
@@ -29,15 +29,15 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "webpack": "^4.32.0",
-    "webpack-cli": "^3.3.2"
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
   }
 }
